@@ -7,3 +7,12 @@ Eindproject propedeuse.
 - ?? (backend)
 - MySQL (database)
 - Digital Ocean (hosting)
+
+
+*Functionaliteiten*
+
+Staleigenaar:
+- 
+
+Eigenaar paard:
+- 
