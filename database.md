@@ -3,38 +3,48 @@
 | id | 
 | naam | 
 | email |
+| ubn |
 
 | Horse | 
 | --- | 
-| id | 
+| id |
 | foto |
 | geslacht (hengst, merrie, ruin) |
-| kleur |
+| haarkleur |
 | *ras* | 
-| *eigenaar* | 
 | geboortedatum |
 | paspoortnummer | 
+| vader | 
+| moeder | 
 | chipnummer | 
 | fokker | 
 | stamboekregister |
 | informatie | 
 | allergieën |
 
-| Stal | 
+| Log | 
 | --- | 
 | id |
-| naam | 
-| ubn |
-| adres | 
-| abonnement | 
+| start_date | 
+| end_date |
+| category | (behandeling, ziekte, dekperiode, overig, ...)
+| note | 
 
-| Faciliteit | 
+
+| Log_media | 
 | --- | 
-| naam | 
-| type | 
-| *stal_id* | 
-
-Todo: 
-- Planning faciliteit (beschikbaarheid, reserveren, etc.)
+| log_id | 
+| name | 
 
 
+| Horse_log | 
+| --- | 
+| horse_id | 
+| log_id | 
+
+
+| User_horses | 
+| --- | 
+| user_id |
+| horse_id | 
+| is_owner | 
