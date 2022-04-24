@@ -11,8 +11,13 @@ Eindproject propedeuse.
 
 *Functionaliteiten*
 
+
+
 Staleigenaar:
-- 
+- Paarden beheren
+- Faciliteiten beheren (beschikbaarheid paddock, molen, ...) 
 
 Eigenaar paard:
-- 
+- Paard beheren
+- Status paard bewerken
+- Faciliteiten reserveren
