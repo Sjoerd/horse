@@ -27,7 +27,7 @@
 | id |
 | start_date | 
 | end_date |
-| category | (behandeling, ziekte, dekperiode, overig, ...)
+| category | (behandeling, ziekte, dekperiode, overig, etc.)
 | note | 
 
 
