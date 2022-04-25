@@ -14,7 +14,11 @@ export function Textarea(props) {
 }
 
 export function Button({ children, ...props}) {
-  return <button type={ props?.type || "button" } className="inline-flex items-center px-3.5 py-2 border border-transparent text-sm leading-4 font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">{ children }</button>
+  if (props.large) {
+    return <button type={ props?.type || "button" } className="inline-flex items-center px-6 py-3 border border-transparent text-md leading-4 font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">{ children }</button>
+  }
+
+  return <button type={ props?.type || "button" } className="inline-flex items-center px-3.5 py-2 border border-transparent text-md leading-4 font-medium rounded-full shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">{ children }</button>
 }
 
 export function Checkbox(props) {
