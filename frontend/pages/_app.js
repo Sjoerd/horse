@@ -2,12 +2,9 @@ import AppLayout from '../components/layout/AppLayout'
 import AuthLayout from '../components/layout/AuthLayout';
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
 
-  let userLoggedIn = false;
-
-  
-  if (userLoggedIn) {
+  if (router.pathname.startsWith('/app')) {
     return (
       <AppLayout>
         <Component {...pageProps} />
